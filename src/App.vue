@@ -1,9 +1,11 @@
 <script setup>
+  import LayoutAuth from "./layouts/LayoutAuth.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
+      <layout-auth />
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <RouterLink class="navbar-brand" to="/">Navbar</RouterLink>

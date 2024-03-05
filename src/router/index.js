@@ -6,6 +6,7 @@ import StudentEdit from "../views/Students/Edit.vue";
 import StaffView from "../views/Staffs/View.vue";
 import StaffEdit from "../views/Staffs/Edit.vue";
 import StaffCreate from "../views/Staffs/Create.vue";
+import LayoutAuth from "../layouts/LayoutAuth.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -48,6 +49,11 @@ const router = createRouter({
       path: "/staffs/create",
       name: "StaffCreate",
       component: StaffCreate,
+    },
+    {
+      path: "/login",
+      name: "LayoutAuth",
+      component: LayoutAuth,
     },
   ],
 });
